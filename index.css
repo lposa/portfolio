@@ -492,4 +492,35 @@ nav a:hover {
     .media i {
         color: white;
     }
+    .work {
+        background-image: linear-gradient(to right, #12111f, #192438, #141728);
+        height: auto;
+        padding-top: 2em;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(auto, 500px));
+        grid-template-rows: repeat(6, 1fr);
+        align-items: center;
+        justify-items: center;
+    }
+    .work h1 {
+        color: lightgoldenrodyellow;
+        text-align: center;
+        font-size: 3rem;
+    }
+    .container img {
+        width: 250px;
+        height: 300px;
+    }
+    .container button {
+        color: lightgoldenrodyellow;
+        font-family: inherit;
+        background: transparent;
+        border: none;
+        transition: all .2s ease-in-out;
+    }
+    .container button:hover {
+        transform: scale(1.1);
+    }
 }
