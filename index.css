@@ -58,6 +58,10 @@ b {
     padding-bottom: 20em;
 }
 
+.logo {
+    font-size: 1.5em;
+}
+
 
 /*PROJECTS STYLING*/
 
@@ -337,5 +341,186 @@ nav a:hover {
     }
     100% {
         background-position: 0% 50%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .content {
+        height: 100%;
+        max-width: 100%;
+        background: var(--background-grayscale);
+        background-image: url(pexels-photo-268533.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        padding: 0;
+        margin: 0;
+    }
+    .logo {
+        font-size: 1em;
+    }
+    .social {
+        position: relative;
+        background-color: var(--background);
+        display: grid;
+        grid-template-rows: repeat(2, minmax(0, 1fr));
+        grid-template-columns: auto;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        bottom: 0;
+        left: 0;
+        color: white;
+        font-weight: bold;
+    }
+    .social p {
+        text-align: center;
+        padding-left: 1em;
+        font-size: 1.1em;
+    }
+    .social h1 {
+        display: inline;
+        font-size: 1.1em;
+        color: inherit;
+        text-align: center;
+        margin-left: 0em;
+        justify-self: left;
+        width: 50%;
+    }
+    .social li {
+        display: inline;
+        list-style: none;
+        font-size: 15px;
+        padding: 10px 10px;
+        border: 1px solid var(--background-complement2);
+        border-radius: 100%;
+        transition: .5s;
+    }
+    .media {
+        display: flex;
+        justify-content: flex-end;
+        align-content: center;
+        padding-right: 1em;
+    }
+    .media h1 {
+        justify-content: flex-end;
+        align-self: center;
+        text-align: center;
+    }
+    .social li:hover {
+        border: 1px solid white;
+        transition: 0.5s;
+    }
+    .media i {
+        color: white;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .content {
+        height: 100%;
+        max-width: 100%;
+        background: var(--background-grayscale);
+        background-image: url(pexels-photo-268533.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        padding: 0;
+        margin: 0;
+    }
+    .logo {
+        font-size: 1em;
+    }
+    .social {
+        position: relative;
+        background-color: var(--background);
+        display: grid;
+        grid-template-rows: repeat(2, minmax(0, 1fr));
+        grid-template-columns: auto;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        bottom: 0;
+        left: 0;
+        color: white;
+        font-weight: bold;
+    }
+    .social p {
+        text-align: center;
+        padding-left: 1em;
+        font-size: 1.1em;
+    }
+    .social h1 {
+        display: inline;
+        font-size: 1.1em;
+        color: inherit;
+        text-align: center;
+        margin-left: 0em;
+        justify-self: left;
+        width: 50%;
+    }
+    .social li {
+        display: inline;
+        list-style: none;
+        font-size: 15px;
+        padding: 10px 10px;
+        border: 1px solid var(--background-complement2);
+        border-radius: 100%;
+        transition: .5s;
+    }
+    .media {
+        display: flex;
+        justify-content: flex-end;
+        align-content: center;
+        padding-right: 1em;
+    }
+    .media h1 {
+        justify-content: flex-end;
+        align-self: center;
+        text-align: center;
+    }
+    .social li:hover {
+        border: 1px solid white;
+        transition: 0.5s;
+    }
+    .media i {
+        color: white;
+    }
+    .work {
+        background-image: linear-gradient(to right, #12111f, #192438, #141728);
+        height: auto;
+        padding-top: 2em;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(auto, 500px));
+        grid-template-rows: repeat(6, 1fr);
+        align-items: center;
+        justify-items: center;
+    }
+    .work h1 {
+        color: lightgoldenrodyellow;
+        text-align: center;
+        font-size: 3rem;
+    }
+    .container img {
+        width: 250px;
+        height: 300px;
+    }
+    .container button {
+        color: lightgoldenrodyellow;
+        font-family: inherit;
+        background: transparent;
+        border: none;
+        transition: all .2s ease-in-out;
+    }
+    .container button:hover {
+        transform: scale(1.1);
     }
 }
